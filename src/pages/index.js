@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <>
-    <SEO title="Logo" />
+    <SEO title="Bertrand Lejoly" description="Bertrand Lejoly design studio." />
     <div style={{ display: `table`, height: `100%`, width: `100%`, position: `absolute`, top: 0, left: 0 }}>
       <div style={{ display: `table-cell`, verticalAlign: `middle`, paddingLeft: `16px`, paddingRight: `16px` }}>
         <div style={{ maxWidth: `384px`, margin: `0 auto` }}>
