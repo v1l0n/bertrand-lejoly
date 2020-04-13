@@ -84,3 +84,7 @@ node_modules/
 # gatsby files
 .cache/
 public
+
+# next files
+.next/
+out

@@ -1,3 +1,0 @@
-[context."feature/gatsbyjs"]
-    command = "gatsby build"
-    publish = "public/"
