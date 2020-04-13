@@ -1,3 +1,7 @@
+[context."develop"]
+    command = "gatsby build"
+    publish = "public/"
+
 [context."feature/gatsbyjs"]
     command = "gatsby build"
     publish = "public/"
