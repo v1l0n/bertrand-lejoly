@@ -7,5 +7,5 @@
     publish = "public/"
 
 [context."feature/nextjs"]
-    command = "yarn build"
+    command = "next export"
     publish = "out/"
