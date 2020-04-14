@@ -94,6 +94,7 @@ const AboutPage = () => {
           <div style={{ width: '20%' }}><PictureBL /></div>
         </div>
         <p style={{ paddingTop: '64px' }}>Excerpt of projects in collaboration with Vincent Van Duysen Architects (2013 until today):</p>
+        
         <Img fluid={data.bb.childImageSharp.fluid} />
         <p style={{ paddingBottom: '64px' }}>Pablo for B&B Italia, 2019, icw Vincent Van Duysen Architects</p>
 
