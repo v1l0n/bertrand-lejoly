@@ -2,23 +2,22 @@
   "name": "bertrand-lejoly",
   "version": "0.1.0",
   "description": "Bertrand Lejoly design studio's website.",
-  "dependencies": {
-    "@babel/core": "^7.9.0",
-    "next": "^9.3.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
   "scripts": {
-    "dev": "next",
-    "build": "next build && next export",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start"
+  },
+  "dependencies": {
+    "next": "9.5.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/v1l0n/bertrand-lejoly.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vilon",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/v1l0n/bertrand-lejoly/issues"

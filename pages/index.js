@@ -1,12 +1,20 @@
-import Link from 'next/link';
+import Head from 'next/head'
+import Link from 'next/link'
+import styles from '../styles/Home.module.css'
 
-export default function Index() {
+export default function Home() {
     return (
-        <div>
-            <Link href="/about">
-                <a title="About Page">About</a>
-            </Link>
-            <p>Hello Next.js</p>
+        <div className={styles.container}>
+            <Head>
+                <title>Bertrand Lejoly design studio</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
+            <main className={styles.main}>
+                <Link href="/about">
+                    <img src="/logo.png" alt="Bertrand Lejoly design studio logo" />
+                </Link>
+            </main>
         </div>
-    );
+    )
 }
