@@ -7,17 +7,22 @@
 }
 
 .main {
-    padding: 5rem 0;
+    padding: 5rem 3rem;
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .resume {
-    width: 75%;
+    display: flex;
 }
 
-.mugshot {
-    width: 15%;
+.resume img {
+    padding: 0 1rem;
+    max-height: 300px;
+}
+
+.project {
+    padding-top: 1rem;
 }
