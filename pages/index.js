@@ -12,7 +12,9 @@ export default function Home() {
 
             <main className={styles.main}>
                 <Link href="/about">
-                    <img src="/logo.png" alt="Bertrand Lejoly design studio logo" />
+                    <a>
+                        <img src="/logo.png" alt="Bertrand Lejoly design studio logo" />
+                    </a>
                 </Link>
             </main>
         </div>
