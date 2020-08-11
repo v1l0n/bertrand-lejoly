@@ -5,7 +5,7 @@
 
 .resume img {
     padding: 0 1rem;
-    max-height: 300px;
+    max-width: 256px;
 }
 
 .projects {
@@ -17,4 +17,12 @@
 
 .project {
     padding-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .resume {
+        flex-direction: column;
+        padding-bottom: 1rem;
+        align-items: center;
+    }
 }

@@ -16,3 +16,9 @@
 .navigation a {
     padding-left: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+}
