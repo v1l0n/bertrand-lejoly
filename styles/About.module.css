@@ -1,18 +1,3 @@
-.container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.main {
-    padding: 5rem 3rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .resume {
     display: flex;
@@ -21,6 +6,13 @@
 .resume img {
     padding: 0 1rem;
     max-height: 300px;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .project {

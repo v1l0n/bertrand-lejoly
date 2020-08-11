@@ -1,0 +1,18 @@
+
+.topbar {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo {
+    max-width: 256px;
+}
+
+.navigation {
+    padding: 22px 0;
+}
+
+.navigation a {
+    padding-left: 1rem;
+}
