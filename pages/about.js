@@ -23,7 +23,7 @@ export default function About({ projects }) {
 
                 {projects.map(({ id, description, image }) => (
                     <div key={id} className={styles.project}>
-                        <img src={process.env.NEXT_PUBLIC_API_URL + image.formats.medium.url} />
+                        <img src={image.formats.medium.url} />
                         <p>{description}</p>
                     </div>
                 ))}
@@ -33,7 +33,7 @@ export default function About({ projects }) {
 }
 
 export async function getStaticProps() {
-    const res = await fetch(process.env.NEXT_PUBLIC_API_URL + '/projects');
+    const res = await fetch(process.env.API_URL + '/projects');
     const projects = await res.json();
     
     return {
