@@ -1,7 +1,11 @@
 [context."develop"]
-    command = "gatsby build"
-    publish = "public/"
+    command = "npm run build && npm run export"
+    publish = "out/"
 
 [context."feature/gatsbyjs"]
     command = "gatsby build"
     publish = "public/"
+
+[context."feature/nextjs"]
+    command = "npm run build && npm run export"
+    publish = "out/"
