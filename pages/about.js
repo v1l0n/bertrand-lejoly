@@ -36,7 +36,6 @@ export default function About({ projects }) {
 }
 
 export async function getStaticProps() {
-    console.log(`[***RL***] API_URL: ${process.env.API_URL}`);
     const res = await fetch(process.env.API_URL + '/projects');
     const projects = await res.json();
     
