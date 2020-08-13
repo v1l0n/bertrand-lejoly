@@ -16,7 +16,7 @@ module.exports = (phase, { defaultConfig }) => {
             NEXT_PUBLIC_ENV: env,
             API_URL: (env == 'production') ?
                 'https://polar-sierra-17664.herokuapp.com' : 
-                'https://limitless-eyrie-65717.herokuapp.com/'
+                'https://limitless-eyrie-65717.herokuapp.com'
         }
     }
 }
