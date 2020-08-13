@@ -23,10 +23,7 @@ export default function About({ projects }) {
 
                 {projects.map(({ id, description, image }) => (
                     <div key={id} className={styles.project}>
-                        <img src={(process.env.NEXT_PUBLIC_ENV == 'development') ?
-                            process.env.NEXT_PUBLIC_API_URL + image.formats.medium.url :
-                            image.formats.medium.url}
-                        />
+                        <img src={image.formats.medium.url} />
                         <p>{description}</p>
                     </div>
                 ))}
@@ -37,7 +34,18 @@ export default function About({ projects }) {
 
 export async function getStaticProps() {
     const res = await fetch(process.env.API_URL + '/projects');
-    const projects = await res.json();
+    var projects = await res.json();
+
+    if (process.env.API_URL.startsWith('http://localhost')) {
+        projects = projects.map(project => {
+            project.image.url =  process.env.API_URL + project.image.url;
+            project.image.formats.thumbnail.url =  process.env.API_URL + project.image.formats.thumbnail.url;
+            project.image.formats.large.url =  process.env.API_URL + project.image.formats.large.url;
+            project.image.formats.medium.url =  process.env.API_URL + project.image.formats.medium.url;
+            project.image.formats.small.url =  process.env.API_URL + project.image.formats.small.url;
+            return project;
+        })
+    }
     
     return {
       props: {

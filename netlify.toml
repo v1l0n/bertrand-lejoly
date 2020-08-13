@@ -1,11 +1,11 @@
-[context."develop"]
+[context.master]
+    command = "npm run build && npm run export"
+    publish = "out/"
+
+[context.develop]
     command = "npm run build && npm run export"
     publish = "out/"
     environment = { ENV = "staging" }
-
-[context."feature/gatsbyjs"]
-    command = "gatsby build"
-    publish = "public/"
 
 [context."feature/nextjs"]
     command = "npm run build && npm run export"
