@@ -1,6 +1,7 @@
 [context."develop"]
     command = "npm run build && npm run export"
     publish = "out/"
+    environment = { ENV = "staging" }
 
 [context."feature/gatsbyjs"]
     command = "gatsby build"
@@ -9,3 +10,4 @@
 [context."feature/nextjs"]
     command = "npm run build && npm run export"
     publish = "out/"
+    environment = { ENV = "staging" }

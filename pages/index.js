@@ -8,6 +8,10 @@ export default function Home() {
             <Head>
                 <title>Bertrand Lejoly design studio</title>
                 <link rel="icon" href="/favicon.ico" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                { process.env.NEXT_PUBLIC_ENV != "production" &&
+                    <meta name="robots" content="noindex"></meta>
+                }
             </Head>
 
             <main className={styles.main}>

@@ -23,7 +23,10 @@ export default function About({ projects }) {
 
                 {projects.map(({ id, description, image }) => (
                     <div key={id} className={styles.project}>
-                        <img src={image.formats.medium.url} />
+                        <img src={(process.env.NEXT_PUBLIC_ENV == 'development') ?
+                            process.env.NEXT_PUBLIC_API_URL + image.formats.medium.url :
+                            image.formats.medium.url}
+                        />
                         <p>{description}</p>
                     </div>
                 ))}

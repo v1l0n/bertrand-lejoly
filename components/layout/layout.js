@@ -9,6 +9,9 @@ export default function Layout({ children }) {
                 <title>Bertrand Lejoly</title>
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                { process.env.NEXT_PUBLIC_ENV != "production" &&
+                    <meta name="robots" content="noindex"></meta>
+                }
             </Head>
 
             <Topbar />
