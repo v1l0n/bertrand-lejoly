@@ -77,3 +77,12 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+node_modules
+
+# gatsby files
+.cache/
+public
+
+# next.js
+/.next/
+/out/
